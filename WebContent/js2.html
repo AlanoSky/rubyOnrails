@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function m1() {
+			alert('hello word');
+		}
+		/* m1(); */
+		function m2(o1,o2) {
+			if (o2.value.length <= 0) {
+				o1.innerHTML = "×";
+			}else {
+				o1.innerHTML = "√";
+			}
+			
+		}
+		
+	</script>
+	<button onclick="m1()">按钮</button>
+	<br>
+	帐号：<input type="text" onblur="m2(f1,this)" >
+	<font id="f1"></font>
+	<br>
+	密码：<input type="text" onblur="m2(f2,this)" >
+	<font id="f2"></font>
+	
+
+</body>
+</html>
